@@ -28,6 +28,8 @@ namespace Exercise4
             this.year = year;
             this.actors = actors;
         }
+        #endregion
+        #region methods
         public override void Print(string[] language)
         {
             Options.Print(ConsoleColor.Cyan, "\n" + language[11] + base.Reference + "\n");

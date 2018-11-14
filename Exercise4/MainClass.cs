@@ -90,7 +90,7 @@ namespace Exercise4
                     default:
                         Console.Clear();
                         ShowMenu();
-                        Options.Print(ConsoleColor.Red, "\n" + language[0] + "\n");
+                        Options.Print(ConsoleColor.Red, language[0] + "1 - 6\n");
                         break;
                 }
 
@@ -107,6 +107,7 @@ namespace Exercise4
             copyNo = Options.ReadInt(language[18], 1000, 1, language[0]);
             author = Options.ReadString(language[17], 8, 3, language[1]);
             publisher = Options.ReadString(language[15], 10, 3, language[1]);
+
             return new BookCard(reference, title, copyNo, author, publisher);
         }
 
@@ -119,6 +120,7 @@ namespace Exercise4
             author = Options.ReadString(language[17], 8, 3, language[1]);
             publisher = Options.ReadString(language[15], 10, 3, language[1]);
             volume = Options.ReadInt(language[16], 1000, 3, language[1]);
+
             return new VolBookCard(reference, title, copyNo, author, publisher, volume);
         }
 
@@ -130,6 +132,7 @@ namespace Exercise4
             copyNo = Options.ReadInt(language[18], 1000, 1, language[0]);
             number = Options.ReadInt(language[19], 1000, 1, language[0]);
             year = Options.ReadInt(language[14], 2018, 1900, language[24]);
+
             return new MagazineCard(reference, title, copyNo, number, year); 
         }
 
@@ -140,9 +143,9 @@ namespace Exercise4
             reference = Options.ReadString(language[11], 8, 3, language[1]);
             title = Options.ReadString(language[12], 15, 3, language[1]);
             copyNo = Options.ReadInt(language[18], 1000, 1, language[0]);
-            director = Options.ReadString(language[13], 15, 3, language[0]);
-            year = Options.ReadInt(language[14], 2018, 1900, language[24]);
-            actorsNo = Options.ReadInt(language[21], 25, 1, language[24]);
+            director = Options.ReadString(language[13], 15, 3, language[1]);
+            year = Options.ReadInt(language[14], 2018, 1900, language[0]);
+            actorsNo = Options.ReadInt(language[21], 25, 1, language[0]);
 
             for (int i = 0; i < actorsNo; i++)
             {

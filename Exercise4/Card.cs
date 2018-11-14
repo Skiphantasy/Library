@@ -29,7 +29,7 @@ namespace Exercise4
         public abstract void Print(string[] language);
         #endregion
         #region properties
-        public string Reference { get => reference; set => reference = value; }
+        public string Reference { get => reference; }
         public string Title { get => title; }
         public int CopyNo { get => copyNo; }
         public int OrderNo { get => orderNo; }
